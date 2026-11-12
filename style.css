@@ -1,61 +1,62 @@
-@charset "UTF-8";
-
-/* テーマカラーは暖色(茶色系統) */
-/* 琥珀色 #BF783A */
-/*フォントは明朝体*/
 * {
-    font-family: "serif";
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* ヘッダー */
-.site-header {
-    border-bottom: 1px solid #cccccc;
-    padding: 20px 40px;
+body {
+    color: #26362f;
+    background: #fbfaf6;
 }
 
-.header-inner {
-    max-width: 1000px;
-    margin: 0 auto;
+/* ヘッダー */
+.site-header {
+    padding: 26px 6%;
+    border-bottom: 1px solid #dedbd0;
+}
+
+.header-inner,
+.nav ul,
+.footer-inner {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 }
 
 .logo {
-    font-size: 22px;
-    font-weight: normal;
+    font-size: 21px;
     letter-spacing: 2px;
 }
 
 .nav ul {
-    display: flex;
+    gap: 48px;
     list-style: none;
-    gap: 30px;
 }
 
 .nav a {
+    color: #26362f;
     text-decoration: none;
-    color: #333333;
-    font-size: 16px;
-    letter-spacing: 1px;
+    padding-bottom: 8px;
 }
 
-/* タイトル */
+.nav a:hover,
+.nav a[aria-current="page"] {
+    border-bottom: 1px solid #26362f;
+}
+
+/* ページタイトル */
 .hero-section {
-    background-color: #edebe0;
-    text-align: center;
     padding: 60px 20px;
-    border-bottom: 1px solid #cccccc;
+    background: #f1efe5;
+    text-align: center;
 }
 
 .en-title {
-    font-size: 14px;
-    letter-spacing: 1px;
     margin-bottom: 10px;
-    color: #555555;
+    color: #61776b;
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
 }
 
 .main-title {
@@ -66,24 +67,21 @@
 
 /* フッター */
 .site-footer {
-    background-color: #c4763c;
-    color: #ffffff;
-    padding: 40px;
     margin-top: 80px;
+    padding: 40px;
+    background: #c4763c;
+    color: #ffffff;
 }
 
 .footer-inner {
     max-width: 1000px;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
     align-items: flex-end;
 }
 
 .footer-info p {
     font-size: 14px;
     line-height: 1.8;
-    letter-spacing: 1px;
 }
 
 .footer-shop-name {
@@ -92,5 +90,4 @@
 
 .footer-copyright {
     font-size: 14px;
-    letter-spacing: 2px;
 }
