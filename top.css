@@ -1,9 +1,12 @@
-@charset "UTF-8";
+.main-color {
+    background-color: #c4763c;
+}
 
 .main-visual {
     position: relative;
-    height: 450px;
+    height: 530px;
     overflow: hidden;
+    margin-bottom: 30px;
 }
 
 .main-visual img {
@@ -19,4 +22,51 @@
     color: #ffffff;
     font-size: 20px;
     writing-mode: vertical-rl;
+}
+
+.section-content {
+    color: #ffffff;
+    text-align: center;
+    padding: 48px 20px 52px;
+}
+
+.concept-heading {
+    font-size: 36px;
+    letter-spacing: 1px;
+    margin-bottom: 42px;
+}
+
+.concept-title {
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 2;
+    margin-bottom: 150px;
+}
+
+.content-heading {
+    font-size: 36px;
+    letter-spacing: 1px;
+    margin-bottom: 24px;
+}
+
+.content-text {
+    font-size: 20px;
+    line-height: 2;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+}
+
+.content-link {
+    display: inline-block;
+    background-color: #F5E6D3;
+    border-radius: 4px;
+    color: #26362f;
+    font-size: 20px;
+    padding: 12px 24px;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.content-link:hover {
+    opacity: 0.8;
 }
