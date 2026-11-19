@@ -91,3 +91,96 @@ body {
 .footer-copyright {
     font-size: 14px;
 }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #26362f;
+    background: #fbfaf6;
+}
+
+/* ヘッダー */
+.site-header {
+    padding: 26px 6%;
+    border-bottom: 1px solid #dedbd0;
+}
+
+.header-inner,
+.nav ul,
+.footer-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 21px;
+    letter-spacing: 2px;
+}
+
+.nav ul {
+    gap: 48px;
+    list-style: none;
+}
+
+.nav a {
+    color: #26362f;
+    text-decoration: none;
+    padding-bottom: 8px;
+}
+
+.nav a:hover,
+.nav a[aria-current="page"] {
+    border-bottom: 1px solid #26362f;
+}
+
+/* ページタイトル */
+.hero-section {
+    padding: 60px 20px;
+    background: #f1efe5;
+    text-align: center;
+}
+
+.en-title {
+    margin-bottom: 10px;
+    color: #61776b;
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.main-title {
+    font-size: 36px;
+    font-weight: normal;
+    letter-spacing: 4px;
+}
+
+/* フッター */
+.site-footer {
+    margin-top: 80px;
+    padding: 40px;
+    background: #c4763c;
+    color: #ffffff;
+}
+
+.footer-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    align-items: flex-end;
+}
+
+.footer-info p {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.footer-shop-name {
+    margin-bottom: 10px;
+}
+
+.footer-copyright {
+    font-size: 14px;
+}
