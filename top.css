@@ -1,31 +1,52 @@
 .main-color {
-    background-color: #c4763c;
+    background-color: #fbfaf6;
+}
+
+.site-footer {
+    margin-top: 0;
 }
 
 .main-visual {
     position: relative;
-    height: 530px;
+    height: clamp(380px, 48vw, 660px);
     overflow: hidden;
     margin-bottom: 30px;
 }
 
 .main-visual img {
+    display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: 65% 70%;
+}
+
+.main-visual::after {
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(90deg, rgba(24, 28, 25, 0.66), rgba(24, 28, 25, 0.3) 38%, transparent 78%),
+        linear-gradient(0deg, rgba(24, 28, 25, 0.16), transparent 45%);
+    content: "";
+    pointer-events: none;
 }
 
 .main-visual-text {
     position: absolute;
-    top: 22px;
-    left: 8%;
+    bottom: clamp(32px, 8vw, 96px);
+    left: clamp(24px, 8%, 120px);
+    z-index: 1;
+    max-width: 720px;
     color: #ffffff;
-    font-size: 20px;
-    writing-mode: vertical-rl;
+    font-size: clamp(30px, 5vw, 64px);
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    line-height: 1.5;
+    text-shadow: 0 2px 18px rgba(0, 0, 0, 0.24);
 }
 
 .section-content {
-    color: #ffffff;
+    color: #26362f;
     text-align: center;
 }
 
@@ -33,6 +54,18 @@
     font-size: 36px;
     letter-spacing: 1px;
     margin-bottom: 42px;
+    position: relative;
+}
+
+.concept-heading::before {
+    background-color: #26362f;
+    content: "";
+    height: 2px;
+    width: 5%;
+    bottom: -8px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .concept-title {
@@ -42,10 +75,23 @@
     margin-bottom: 150px;
 }
 
+
 .content-heading {
     font-size: 36px;
     letter-spacing: 1px;
     margin-bottom: 24px;
+    position: relative;
+}
+
+.content-heading::before {
+    background-color: #26362f;
+    content: "";
+    height: 2px;
+    width: 5%;
+    bottom: -6px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .content-text {
@@ -57,17 +103,17 @@
 
 .content-link {
     display: inline-block;
-    background-color: #F5E6D3;
+    background-color: #61776b;
     border-radius: 35px;
-    color: #26362f;
+    color: #ffffff;
     font-size: 16px;
     padding: 16px 60px;
     text-decoration: none;
     transition: opacity 0.2s ease;
     margin-bottom: 120px;
+    border: 3px solid #26362f;
 }
 
 .content-link:hover {
     opacity: 0.8;
 }
-
