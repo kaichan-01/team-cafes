@@ -1,5 +1,5 @@
 .main-color {
-    background-color: #c4763c;
+    background-color: #fbfaf6;
 }
 
 .site-footer {
@@ -46,7 +46,7 @@
 }
 
 .section-content {
-    color: #ffffff;
+    color: #26362f;
     text-align: center;
 }
 
@@ -54,6 +54,18 @@
     font-size: 36px;
     letter-spacing: 1px;
     margin-bottom: 42px;
+    position: relative;
+}
+
+.concept-heading::before {
+    background-color: #26362f;
+    content: "";
+    height: 2px;
+    width: 5%;
+    bottom: -8px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .concept-title {
@@ -63,10 +75,23 @@
     margin-bottom: 150px;
 }
 
+
 .content-heading {
     font-size: 36px;
     letter-spacing: 1px;
     margin-bottom: 24px;
+    position: relative;
+}
+
+.content-heading::before {
+    background-color: #26362f;
+    content: "";
+    height: 2px;
+    width: 5%;
+    bottom: -6px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .content-text {
@@ -78,17 +103,17 @@
 
 .content-link {
     display: inline-block;
-    background-color: #F5E6D3;
+    background-color: #61776b;
     border-radius: 35px;
-    color: #26362f;
+    color: #ffffff;
     font-size: 16px;
     padding: 16px 60px;
     text-decoration: none;
     transition: opacity 0.2s ease;
     margin-bottom: 120px;
+    border: 3px solid #26362f;
 }
 
 .content-link:hover {
     opacity: 0.8;
 }
-
